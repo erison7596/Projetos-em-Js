@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    color: white;
+    background-color: #260729;
+    width: 100%;
+    height: 100px;
+
+}
+body{
+    background-color: #2a2344;
+}
+
+.fontebonita {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons li {
+    display: inline-block;
+    margin: 30px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: black 0px 0px 1px;
+}
+
+.buttons li div {
+    margin-top: 3%;
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-style: bold;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.buttons li a div {
+    padding: 6px;
+}
+
+
+.megasena:hover {
+    background-color: green;
+    box-shadow: black 0px 0px 10px;
+}
+
+.quina:hover {
+    background-color: blue;
+    box-shadow: black 0px 0px 10px;
+}
+
+.quinaclick {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.duplasenaclick {
+    background-color: red;
+    border-radius: 10px;
+}
+
+.lotofacilclick {
+    background-color: purple;
+    border-radius: 10px;
+}
+
+.lotomaniaclick {
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.timemaniaclick {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.duplasena:hover {
+    background-color: red;
+    box-shadow: black 0px 0px 10px;
+}
+
+.lotofacil:hover {
+    background-color: purple;
+    box-shadow: black 0px 0px 10px;
+}
+
+.lotomania:hover {
+    background-color: orange;
+    box-shadow: black 0px 0px 10px;
+}
+
+.timemania:hover {
+    background-color: yellow;
+    color: green;
+    box-shadow: black 0px 0px 10px;
+}
+
+.megasenaclick {
+    background-color: green;
+    border-radius: 10px;
+}
+
+
+.bot {
+    padding: 5px;
+    background-color: greenyellow;
+    border: 0px solid #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 400px;
+    height: 70px;
+}
+
+.bot:hover {
+    background-color: green;
+    color: white;
+    box-shadow: black 0px 0px 10px;
+}
+
+.qtd_n {
+    Color: black;
+    font-size: 30px;
+}
+
+.gerador {
+    text-align: center;
+}
+
+.select {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.select option {
+    font-size: 20px;
+}
+
+.nome_gerar {
+    font-size: 40px;
+    font-style: bold;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 3%;
+}
+.qtd_n{
+    color: white;
+}
+
+.selecao_m {
+    color: green;
+}
+
+.selecao_q {
+    color: blue;
+}
+
+.selecao_d {
+    color: red;
+}
+
+.selecao_lf {
+    color: purple;
+}
+
+.selecao_lm {
+    color: orange;
+}
+
+.selecao_t {
+    color: yellow;
+}
+
+.megaBola {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.quinaBola {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.lotofBola {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: purple;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.lotoMBola {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.timeBola {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.duplaBola {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.megabolacenter {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+    color: chartreuse;
+}
+
+.probabilidade {
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    display: block;
+    width: 400px;
+    font-size: 20px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.valorJogo {
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 3%;
+}

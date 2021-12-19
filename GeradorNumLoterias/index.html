@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador números Loteria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="fontebonita" style="text-align:center">
+            <h1>Gerador de loterias</h1>
+            <p style="color:#fff">Feito para você tentar sua sorte, aproveite!</p>
+
+        </div>
+    </header>
+
+    <ul class="buttons">
+        <li class="megasena" id="mega" onclick="mega('mega1', 'quina1', 'dupla1', 'lotof1', 'lotom1', 'time1')">
+            <a href="#megasena">
+                <div>Mega-Sena</div>
+            </a>
+        </li>
+        <li class="quina" id="quina" onclick="quina('quina1', 'mega1' , 'dupla1', 'lotof1', 'lotom1', 'time1')">
+            <a href="#quina">
+                <div>Quina</div>
+            </a>
+        </li>
+        <li class="duplasena" id="dupla" onclick="dupla('dupla1', 'mega1', 'quina1', 'lotof1', 'lotom1', 'time1')">
+            <a href="#duplasena">
+                <div>Dupla-Sena</div>
+            </a>
+        </li>
+        <li class="lotofacil" id="lotof" onclick="lotof('lotof1', 'dupla1', 'mega1', 'quina1', 'lotom1', 'time1')">
+            <a href="#lotofacil">
+                <div>Lotofácil</div>
+            </a>
+        </li>
+        <li class="lotomania" id="lotom" onclick="lotom('lotom1', 'dupla1', 'lotof1', 'mega1', 'quina1', 'time1')">
+            <a href="#lotomania">
+                <div>Lotomania</div>
+            </a>
+        </li>
+        <li class="timemania" id="time" onclick="time('time1', 'dupla1', 'lotof1', 'lotom1', 'mega1', 'quina1')">
+            <a href="#timemania">
+                <div>TimeMania</div>
+            </a>
+        </li>
+    </ul>
+
+    <div class="gerador" id="mega1" style="display: none;">
+        <form action="index.html" method="post" id="qtd_m">
+            <div class="nome_gerar">Gerar números da <span class="selecao_m">Mega-Sena</span></div><br><br>
+            <label for="qtd_n" class="qtd_n">Quantidade
+                de números<br>
+                <select name="qtd_m" class="select" id="quantMega">
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            </label>
+            <br><br> <input type="button" class="bot" value="Gerar números" onclick="megaSena()">
+        </form>
+    </div>
+
+    <div class="gerador" id="quina1" style="display: none;">
+        <form action="#quina" method="post">
+            <div class="nome_gerar">Gerar números da <span class="selecao_q">Quina</span></div><br><br>
+            <label for="qtd_n" class="qtd_n">Quantidade
+                de números<br>
+                <select name="qtd_n" id="quantQuina" class="select">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+
+                </select>
+            </label>
+            <br><br> <input type="button" class="bot" value="Gerar números" onclick="quinaFunc()">
+        </form>
+    </div>
+
+    <div class="gerador" id="dupla1" style="display: none;">
+        <form action="#duplasena" method="post">
+            <div class="nome_gerar">Gerar números da <span class="selecao_d">Dupla-Sena</span></div><br><br>
+            <label for="qtd_n" class="qtd_n">Quantidade
+                de números<br>
+                <select name="qtd_n" id="quantDupla" class="select">
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            </label>
+            <br><br> <input type="button" class="bot" value="Gerar números" onclick="duplaSenaFunc()">
+        </form>
+    </div>
+
+    <div class="gerador" id="lotof1" style="display: none;">
+        <form action="#lotofacil" method="post">
+            <div class="nome_gerar">Gerar números da <span class="selecao_lf">Lotofácil</span></div><br><br>
+            <label for="qtd_n" class="qtd_n">Quantidade
+                de números<br>
+                <select name="qtd_n" id="quantLotof" class="select">
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                </select>
+            </label>
+            <br><br> <input type="button" class="bot" value="Gerar números" onclick="lotofacilFunc()">
+        </form>
+    </div>
+
+    <div class="gerador" id="lotom1" style="display: none;">
+        <form action="#lotomania" method="post">
+            <div class="nome_gerar">Gerar números da <span class="selecao_lm">Lotomania</span></div><br><br>
+            <label for="qtd_n" class="qtd_n">Quantidade
+                de números<br>
+                <select name="qtd_n" id="quantLotom" class="select">
+                    <option value="50">50</option>
+                </select>
+            </label>
+            <br><br> <input type="button" class="bot" value="Gerar números" onclick="lotomaniaFunc()">
+        </form>
+    </div>
+
+    <div class="gerador" id="time1" style="display: none;">
+        <form action="#timemania" method="post">
+            <div class="nome_gerar">Gerar números da <span class="selecao_t">TimeMania</span></div><br><br>
+            <label for="qtd_n" class="qtd_n">Quantidade
+                de números<br>
+                <select name="qtd_n" id="quantTime" class="select">
+                    <option value="10">10</option>
+                </select>
+            </label>
+            <br><br> <input type="button" class="bot" value="Gerar números" onclick="timemaniaFunc()">
+        </form>
+    </div><br><br>
+
+    <div class="megabolacenter" id="escreveBolas"></div>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
