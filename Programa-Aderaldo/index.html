@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>JA Distribuidora</title>
+</head>
+<body>
+    <header>
+        <div class="fundoJA">
+            <img src="img/ja.jpeg" alt="Logo Ja Distribuidora" class="img-logo">
+            <div id="porcent" class="spanPorcent">
+                Porcentagem do Imposto<br>
+                <form action="index.html" method="post" id="porcet">
+                    <input type="number" min="1" max="100" id="porcent2" class="input_n">
+                    <input type="button" class="botaoEnvip" value="Enviar" onclick="gerarPorcert()">
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="gerador" id="quantidadeProdutos">
+        <form action="index.html" method="post" id="qtd_m">
+            <label for="qtd_n" class="qtd_n">Quantidade
+                de Produtos<br>
+                <select name="Quantidade" class="select" id="quantProd">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            </label>
+            <br><br> <input type="button" class="botaoEnvi" value="Gerar Tabelas" onclick="gerarQuant()">
+        </form>
+    </div>
+    <div class="gerados" id="escreveGerados">
+        
+        <form action="index.html" method="post" id="formInputNum">
+
+        </form>
+        
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
