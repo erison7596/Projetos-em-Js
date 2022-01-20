@@ -1,5 +1,12 @@
 var quant;
+let total = 0;
 function gerarQuant(){
+    if(total == 0){
+           alert("Por favor, envie primeiro o valor da Porcentagem");
+     
+         
+        return 1;
+    }
     quant = document.getElementById("quantProd").value;
     document.getElementById("quantidadeProdutos").style.display = 'none';
     const escreve = document.getElementById("formInputNum");
@@ -20,8 +27,8 @@ function gerarQuant(){
     }
 }
 var quanti;
-const total = 0;
 function gerarPorcert(){
+    total++;
     quanti = document.getElementById("porcent2").value;
     quanti = quanti/100;
     document.getElementById("porcent").style.display = 'none';
@@ -49,10 +56,8 @@ function gerarResult(){
         escreve2 = document.getElementById(`resultfinal${i}`);
         escreve= document.getElementById(`divgerados_${i}`);
         valor= document.getElementById(`num${i}`).value;
-        console.log(valor);
         let fim = parseFloat(valor)* parseFloat(quanti);
         tot += parseFloat(valor) + parseFloat(fim);
-        console.log(tot);
         
         escreve.insertAdjacentHTML('beforeend', `<div class="escrevendo" id="del${i}">${fim.toFixed(2)}</div>`);
         escreve2.insertAdjacentHTML('beforeend', `<div class="escrevendo" id="dele${i}">${tot.toFixed(2)}</div>`);
