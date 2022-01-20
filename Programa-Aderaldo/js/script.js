@@ -28,6 +28,18 @@ function gerarPorcert(){
 }
 
 function gerarResult(){
+    for(let i = 0; i < 15; i++){
+        var apagar = document.getElementById(`del${i}`);
+        if (apagar != null) {
+            apagar.remove();
+        }
+    }
+    for(let i = 0; i < 15; i++){
+        var apagar = document.getElementById(`dele${i}`);
+        if (apagar != null) {
+            apagar.remove();
+        }
+    }
     var escreve;
     var valor;
     var escreve2;
@@ -42,7 +54,7 @@ function gerarResult(){
         tot += parseFloat(valor) + parseFloat(fim);
         console.log(tot);
         
-        escreve.insertAdjacentHTML('beforeend', `<div class="escrevendo">${fim.toFixed(2)}</div>`);
-        escreve2.insertAdjacentHTML('beforeend', `<div class="escrevendo">${tot.toFixed(2)}</div>`);
+        escreve.insertAdjacentHTML('beforeend', `<div class="escrevendo" id="del${i}">${fim.toFixed(2)}</div>`);
+        escreve2.insertAdjacentHTML('beforeend', `<div class="escrevendo" id="dele${i}">${tot.toFixed(2)}</div>`);
     }
 }
