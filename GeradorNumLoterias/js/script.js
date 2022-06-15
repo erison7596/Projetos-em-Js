@@ -184,7 +184,7 @@ function megaSena() {
     for (let i = 0; i < 50; i++) {
         var apagar = document.getElementById(`apagar${i}`);
         if (apagar != null) {
-            apagar.remove();
+            apagar.remove(); 
         }
         var apagar2 = document.getElementById("prob");
         if (apagar2 != null) {
@@ -534,6 +534,10 @@ function duplaSenaFunc() {
         var apagar2 = document.getElementById("prob");
         if (apagar2 != null) {
             apagar2.remove();
+        }
+        var apagarbr = document.getElementById("br");
+        if (apagarbr != null) {
+            apagarbr.remove();
         }
     }
     const escreve = document.getElementById("escreveBolas");
